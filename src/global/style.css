@@ -1,0 +1,9 @@
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  grid-auto-rows: 100vh;
+  background-image: url("/assets/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

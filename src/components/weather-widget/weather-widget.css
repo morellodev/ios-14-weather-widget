@@ -1,0 +1,53 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 256px;
+  height: 256px;
+  border-radius: 32px;
+  color: #ffffff;
+  background: linear-gradient(#3f8ab3, #6ab3d6);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 24px;
+  box-sizing: border-box;
+  user-select: none;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.location {
+  margin: 0;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.temperature {
+  margin: 0;
+  font-weight: 200;
+  font-size: 64px;
+}
+
+.weather {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.weather.icon {
+  color: #f8d24b;
+  font-size: 28px;
+  margin-bottom: 4px;
+}
+
+.weather.condition {
+  margin-bottom: 4px;
+}
+
+.weather.temperatures {
+  font-variant-numeric: tabular-nums;
+}
+
+.temp-high {
+  margin-right: 8px;
+}
