@@ -45,6 +45,7 @@
 
 .weather.condition {
   margin-bottom: 4px;
+  text-transform: capitalize;
 }
 
 .weather.temperatures {

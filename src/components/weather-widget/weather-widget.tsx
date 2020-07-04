@@ -41,7 +41,7 @@ export class WeatherWidget implements ComponentInterface {
       });
 
       this.location = weatherData.name;
-      this.condition = weatherData.weather[0].main;
+      this.condition = weatherData.weather[0].description;
       this.iconName = getIoniconFromOwmWeatherId(weatherData.weather[0].id);
       this.temperature = Math.round(weatherData.main.temp);
       this.tempHigh = Math.ceil(weatherData.main.temp_max);
