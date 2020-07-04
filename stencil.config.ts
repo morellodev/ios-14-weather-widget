@@ -1,4 +1,5 @@
 import { Config } from "@stencil/core";
+import dotenvPlugin from "rollup-plugin-dotenv";
 
 export const config: Config = {
   namespace: "ios-14-weather-widget",
@@ -23,4 +24,5 @@ export const config: Config = {
       serviceWorker: null, // disable service workers
     },
   ],
+  plugins: [dotenvPlugin()],
 };
