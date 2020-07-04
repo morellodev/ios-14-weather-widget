@@ -20,7 +20,7 @@ export function getIoniconFromOwmWeatherId(id: number) {
   }
 
   if (id >= 802 && id < 805) {
-    return "partly-sunny";
+    return "cloudy";
   }
 
   return "sunny";
