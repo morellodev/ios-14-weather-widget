@@ -7,11 +7,6 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface WeatherWidget {
-        "condition": string;
-        "location": string;
-        "tempHigh": number;
-        "tempLow": number;
-        "temperature": number;
     }
 }
 declare global {
@@ -27,11 +22,6 @@ declare global {
 }
 declare namespace LocalJSX {
     interface WeatherWidget {
-        "condition"?: string;
-        "location"?: string;
-        "tempHigh"?: number;
-        "tempLow"?: number;
-        "temperature"?: number;
     }
     interface IntrinsicElements {
         "weather-widget": WeatherWidget;
