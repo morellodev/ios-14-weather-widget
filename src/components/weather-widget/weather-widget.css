@@ -39,10 +39,6 @@
   margin-bottom: 4px;
 }
 
-.weather.icon.sunny {
-  color: #f8d24b;
-}
-
 .weather.condition {
   margin-bottom: 4px;
   text-transform: capitalize;

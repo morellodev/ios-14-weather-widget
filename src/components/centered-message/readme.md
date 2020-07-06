@@ -1,21 +1,21 @@
-# weather-widget
+# centered-message
+
+
 
 <!-- Auto Generated Below -->
 
 
 ## Dependencies
 
-### Depends on
+### Used by
 
-- [weather-icon](../weather-icon)
-- [centered-message](../centered-message)
+ - [weather-widget](../weather-widget)
 
 ### Graph
 ```mermaid
 graph TD;
-  weather-widget --> weather-icon
   weather-widget --> centered-message
-  style weather-widget fill:#f9f,stroke:#333,stroke-width:4px
+  style centered-message fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------

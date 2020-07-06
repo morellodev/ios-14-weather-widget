@@ -6,10 +6,27 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    interface CenteredMessage {
+    }
+    interface WeatherIcon {
+        "owmId": number;
+    }
     interface WeatherWidget {
     }
 }
 declare global {
+    interface HTMLCenteredMessageElement extends Components.CenteredMessage, HTMLStencilElement {
+    }
+    var HTMLCenteredMessageElement: {
+        prototype: HTMLCenteredMessageElement;
+        new (): HTMLCenteredMessageElement;
+    };
+    interface HTMLWeatherIconElement extends Components.WeatherIcon, HTMLStencilElement {
+    }
+    var HTMLWeatherIconElement: {
+        prototype: HTMLWeatherIconElement;
+        new (): HTMLWeatherIconElement;
+    };
     interface HTMLWeatherWidgetElement extends Components.WeatherWidget, HTMLStencilElement {
     }
     var HTMLWeatherWidgetElement: {
@@ -17,13 +34,22 @@ declare global {
         new (): HTMLWeatherWidgetElement;
     };
     interface HTMLElementTagNameMap {
+        "centered-message": HTMLCenteredMessageElement;
+        "weather-icon": HTMLWeatherIconElement;
         "weather-widget": HTMLWeatherWidgetElement;
     }
 }
 declare namespace LocalJSX {
+    interface CenteredMessage {
+    }
+    interface WeatherIcon {
+        "owmId"?: number;
+    }
     interface WeatherWidget {
     }
     interface IntrinsicElements {
+        "centered-message": CenteredMessage;
+        "weather-icon": WeatherIcon;
         "weather-widget": WeatherWidget;
     }
 }
@@ -31,6 +57,8 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "centered-message": LocalJSX.CenteredMessage & JSXBase.HTMLAttributes<HTMLCenteredMessageElement>;
+            "weather-icon": LocalJSX.WeatherIcon & JSXBase.HTMLAttributes<HTMLWeatherIconElement>;
             "weather-widget": LocalJSX.WeatherWidget & JSXBase.HTMLAttributes<HTMLWeatherWidgetElement>;
         }
     }
